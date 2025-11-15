@@ -1,3 +1,6 @@
+from typing import Dict, List
+import matplotlib.pyplot as plt
+
 def plot_loss_curves(results: Dict[str, List[float]]):
   """Plots training curves of a results dictionary."""
   # Get the loss values of the results dictionary (training and test)
