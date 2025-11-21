@@ -4,6 +4,8 @@ from PIL import Image
 
 from torchvision import transforms
 
+device = "cuda" if torch.cuda.is_available() else "cpu"
+
 # 1. Take in a trained model
 def pred_and_plot_image(model: torch.nn.Module,
                         image_path: str,
