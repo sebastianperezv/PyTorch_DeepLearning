@@ -1,9 +1,16 @@
+"""
+Utility function to make predictions.
+"""
+import torch
+import torchvision
+from torchvision import transforms
+import matplotlib.pyplot as plt
+
 from typing import List, Tuple
 
 from PIL import Image
 
-from torchvision import transforms
-
+# Set device
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
 # 1. Take in a trained model
